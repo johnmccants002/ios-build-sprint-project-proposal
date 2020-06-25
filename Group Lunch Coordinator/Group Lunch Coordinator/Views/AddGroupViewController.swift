@@ -9,21 +9,27 @@
 import UIKit
 
 class AddGroupViewController: UIViewController {
-
     
+    var groupController : GroupController?
+
   
     @IBOutlet weak var groupTextField: UITextField!
     
     @IBOutlet weak var addGroupButton: UIButton!
     
     @IBAction func addGroupButtonTapped(_ sender: Any) {
+        createGroup()
+        dismiss(animated: true) {
+            guard let groupController = self.groupController else {return}
+            groupController.loadFromPersistenceStore()
+        }
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -36,8 +42,18 @@ class AddGroupViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func createGroup() {
+        guard let groupText = groupTextField.text, groupText.isEmpty == false, let group = groupController else { return }
+        let newGroup = Group(name: groupText, totalMembers: 1, joined: true)
+        group.groups.append(newGroup)
+        group.saveToPersistenceStore()
+        
+    }
 
 }
+
+
 
 
 //extension AddGroupViewController: UIPickerViewDataSource, UIPickerViewDelegate {

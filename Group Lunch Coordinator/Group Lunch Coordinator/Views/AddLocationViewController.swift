@@ -12,8 +12,6 @@ class AddLocationViewController: UIViewController {
 
     
     @IBOutlet weak var enterLocationTextField: UITextField!
-    
-    
     @IBOutlet weak var finishButton: UIButton!
     
     override func viewDidLoad() {

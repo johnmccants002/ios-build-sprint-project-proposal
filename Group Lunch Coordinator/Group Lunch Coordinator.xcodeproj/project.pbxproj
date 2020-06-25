@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31020A79249DA93E00E13BB3 /* Locations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31020A78249DA93E00E13BB3 /* Locations.storyboard */; };
-		31020A7B249DA94C00E13BB3 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31020A7A249DA94C00E13BB3 /* Groups.storyboard */; };
+		31020A7D24A30C4A00E13BB3 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31020A7C24A30C4A00E13BB3 /* GroupModel.swift */; };
+		31020A7F24A3105800E13BB3 /* GroupModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31020A7E24A3105800E13BB3 /* GroupModelController.swift */; };
 		4A0BACB1249C38AC00DF9A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACB0249C38AC00DF9A77 /* AppDelegate.swift */; };
 		4A0BACB3249C38AC00DF9A77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACB2249C38AC00DF9A77 /* SceneDelegate.swift */; };
 		4A0BACB8249C38AC00DF9A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0BACB6249C38AC00DF9A77 /* Main.storyboard */; };
@@ -26,7 +27,8 @@
 
 /* Begin PBXFileReference section */
 		31020A78249DA93E00E13BB3 /* Locations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Locations.storyboard; sourceTree = "<group>"; };
-		31020A7A249DA94C00E13BB3 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		31020A7C24A30C4A00E13BB3 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		31020A7E24A3105800E13BB3 /* GroupModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModelController.swift; sourceTree = "<group>"; };
 		4A0BACAD249C38AC00DF9A77 /* Group Lunch Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group Lunch Coordinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0BACB0249C38AC00DF9A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A0BACB2249C38AC00DF9A77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 			children = (
 				4A0BACB6249C38AC00DF9A77 /* Main.storyboard */,
 				31020A78249DA93E00E13BB3 /* Locations.storyboard */,
-				31020A7A249DA94C00E13BB3 /* Groups.storyboard */,
 				4A0BACD6249C5E9C00DF9A77 /* GroupsTableViewCell.swift */,
 				4A0BACD8249C5EB600DF9A77 /* LocationTableViewCell.swift */,
 				4A0BACD5249C3F4600DF9A77 /* Controllers */,
@@ -114,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0BACCC249C3E1C00DF9A77 /* UserModel.swift */,
+				31020A7C24A30C4A00E13BB3 /* GroupModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0BACD3249C3F3000DF9A77 /* UserModelController.swift */,
+				31020A7E24A3105800E13BB3 /* GroupModelController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,7 +187,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31020A7B249DA94C00E13BB3 /* Groups.storyboard in Resources */,
 				4A0BACBD249C38B800DF9A77 /* LaunchScreen.storyboard in Resources */,
 				4A0BACBA249C38B800DF9A77 /* Assets.xcassets in Resources */,
 				4A0BACB8249C38AC00DF9A77 /* Main.storyboard in Resources */,
@@ -199,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31020A7D24A30C4A00E13BB3 /* GroupModel.swift in Sources */,
 				4A0BACD4249C3F3000DF9A77 /* UserModelController.swift in Sources */,
 				4A0BACB1249C38AC00DF9A77 /* AppDelegate.swift in Sources */,
+				31020A7F24A3105800E13BB3 /* GroupModelController.swift in Sources */,
 				4A0BACC8249C3BC900DF9A77 /* AddGroupViewController.swift in Sources */,
 				4A0BACB3249C38AC00DF9A77 /* SceneDelegate.swift in Sources */,
 				4A0BACD7249C5E9C00DF9A77 /* GroupsTableViewCell.swift in Sources */,
