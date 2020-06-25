@@ -9,19 +9,32 @@
 import UIKit
 
 class AddLocationViewController: UIViewController {
-
+    
+    var locationController: LocationController?
     
     @IBOutlet weak var enterLocationTextField: UITextField!
     
     
-    @IBOutlet weak var finishButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func addLocationTappedButton(_ sender: Any) {
+        guard let locationName = enterLocationTextField.text, !locationName.isEmpty else { return }
+        
+        locationController?.createLocation(with: locationName)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+}
+
+
 
     /*
     // MARK: - Navigation
@@ -32,5 +45,3 @@ class AddLocationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}

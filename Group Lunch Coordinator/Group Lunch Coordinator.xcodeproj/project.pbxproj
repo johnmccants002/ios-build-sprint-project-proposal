@@ -21,7 +21,8 @@
 		4A0BACD7249C5E9C00DF9A77 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACD6249C5E9C00DF9A77 /* GroupsTableViewCell.swift */; };
 		4A0BACD9249C5EB600DF9A77 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACD8249C5EB600DF9A77 /* LocationTableViewCell.swift */; };
 		4A0BACDB249C5F7000DF9A77 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACDA249C5F7000DF9A77 /* GroupsTableViewController.swift */; };
-		4A0BACDD249C5F7F00DF9A77 /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BACDC249C5F7F00DF9A77 /* LocationTableViewController.swift */; };
+		4A44E40D249E836D00445F20 /* LocationsUpvoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44E40C249E836D00445F20 /* LocationsUpvoteViewController.swift */; };
+		4A44E40F249E96D700445F20 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44E40E249E96D700445F20 /* LocationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,8 @@
 		4A0BACD6249C5E9C00DF9A77 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		4A0BACD8249C5EB600DF9A77 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		4A0BACDA249C5F7000DF9A77 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
-		4A0BACDC249C5F7F00DF9A77 /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		4A44E40C249E836D00445F20 /* LocationsUpvoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsUpvoteViewController.swift; sourceTree = SOURCE_ROOT; };
+		4A44E40E249E96D700445F20 /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				4A0BACC7249C3BC900DF9A77 /* AddGroupViewController.swift */,
-				4A0BACC9249C3C7500DF9A77 /* AddLocationViewController.swift */,
 				4A0BACDA249C5F7000DF9A77 /* GroupsTableViewController.swift */,
-				4A0BACDC249C5F7F00DF9A77 /* LocationTableViewController.swift */,
+				4A44E40C249E836D00445F20 /* LocationsUpvoteViewController.swift */,
+				4A0BACC9249C3C7500DF9A77 /* AddLocationViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0BACD3249C3F3000DF9A77 /* UserModelController.swift */,
+				4A44E40E249E96D700445F20 /* LocationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,15 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A44E40F249E96D700445F20 /* LocationController.swift in Sources */,
 				4A0BACD4249C3F3000DF9A77 /* UserModelController.swift in Sources */,
 				4A0BACB1249C38AC00DF9A77 /* AppDelegate.swift in Sources */,
 				4A0BACC8249C3BC900DF9A77 /* AddGroupViewController.swift in Sources */,
 				4A0BACB3249C38AC00DF9A77 /* SceneDelegate.swift in Sources */,
 				4A0BACD7249C5E9C00DF9A77 /* GroupsTableViewCell.swift in Sources */,
 				4A0BACCD249C3E1C00DF9A77 /* UserModel.swift in Sources */,
+				4A44E40D249E836D00445F20 /* LocationsUpvoteViewController.swift in Sources */,
 				4A0BACD9249C5EB600DF9A77 /* LocationTableViewCell.swift in Sources */,
 				4A0BACDB249C5F7000DF9A77 /* GroupsTableViewController.swift in Sources */,
-				4A0BACDD249C5F7F00DF9A77 /* LocationTableViewController.swift in Sources */,
 				4A0BACCA249C3C7500DF9A77 /* AddLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

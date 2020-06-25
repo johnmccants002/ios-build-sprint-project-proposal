@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct User {
     var name: String
@@ -21,12 +22,8 @@ struct TimeFrameGroup {
 }
 
 struct Location {
-    
-    
-    
-    var place: [String: String]
-    
-    
-    
-    
+    let name: String
+    var rank: Int = 1
 }
+
+

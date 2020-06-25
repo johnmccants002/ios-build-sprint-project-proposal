@@ -66,9 +66,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="yjA-2a-jnH" kind="show" id="MZS-MS-f3I"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flw-ih-S8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,6 +91,14 @@
                                 <state key="normal" title="Add Group"/>
                                 <connections>
                                     <action selector="addGroupButtonTapped:" destination="AQ7-78-M3L" eventType="touchUpInside" id="372-4s-tSK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-cC-DxN">
+                                <rect key="frame" x="174" y="548" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Locations"/>
+                                <connections>
+                                    <segue destination="yjA-2a-jnH" kind="show" id="Kjw-RT-Zvm"/>
                                 </connections>
                             </button>
                         </subviews>
