@@ -15,7 +15,7 @@ class LocationTableViewCell: UITableViewCell {
     @IBOutlet weak var rankLabel: UILabel!
     
   
-    
+    var locations: [Location] = []
     var location: Location? {
         didSet {
             updateViews()
@@ -26,17 +26,14 @@ class LocationTableViewCell: UITableViewCell {
     var count = 1
     let locationController = LocationController()
     
+//    let LUVC = LocationsUpvoteViewController()
+  
     @IBAction func voteButtonTapped(_ sender: Any) {
-        
-        
-        count = count + 1
-        rankLabel.text = "\(count)"
-        
-        //locationController.addRank()
-        //rankLabel.text = "\(count)"
-        //guard let rankNumber: Int = location?.rank else { return }
-        
-        print("vote tapped!")
+        //count = count + 1
+        location?.rank += 1
+        rankLabel.text = "\(location?.rank ?? 1)"
+
+        print(locations)
     }
     
     
@@ -46,5 +43,6 @@ class LocationTableViewCell: UITableViewCell {
         guard let location = location else { return }
         
         locationNameLabel.text = location.name
+        
     }
 }
