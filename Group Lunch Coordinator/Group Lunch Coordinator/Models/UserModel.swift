@@ -21,7 +21,7 @@ struct TimeFrameGroup {
     
 }
 
-struct Location {
+struct Location: Codable {
     let name: String
     var rank: Int = 1
 }
